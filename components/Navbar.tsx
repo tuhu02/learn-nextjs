@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="relative bg-white text-black drop-shadow-md">
+    <header className="sticky top-0 z-50 bg-white text-black drop-shadow-md">
       <div className="flex items-center justify-between px-8 py-6 md:px-32">
         <a href="#" className="flex items-center gap-2">
           <img
@@ -19,16 +19,16 @@ export default function Navbar() {
         </a>
 
         <ul className="hidden items-center gap-12 text-base font-semibold xl:flex">
-          <li className="cursor-pointer rounded-md p-3 transition-all hover:bg-orange-800 hover:text-white">
+          <li className="cursor-pointer rounded-md p-3 transition-all hover:bg-amber-100 hover:text-orange-900">
             Home
           </li>
-          <li className="cursor-pointer rounded-md p-3 transition-all hover:bg-orange-800 hover:text-white">
+          <li className="cursor-pointer rounded-md p-3 transition-all hover:bg-amber-100 hover:text-orange-900">
             Products
           </li>
-          <li className="cursor-pointer rounded-md p-3 transition-all hover:bg-orange-800 hover:text-white">
+          <li className="cursor-pointer rounded-md p-3 transition-all hover:bg-amber-100 hover:text-orange-900">
             Explore
           </li>
-          <li className="cursor-pointer rounded-md p-3 transition-all hover:bg-orange-800 hover:text-white">
+          <li className="cursor-pointer rounded-md p-3 transition-all hover:bg-amber-100">
             Contact
           </li>
         </ul>

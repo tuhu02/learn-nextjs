@@ -9,7 +9,7 @@ export default function Search() {
 
         <Input
           type="text"
-          placeholder="Search coffee..."
+          placeholder="Search ..."
           className="h-9 pl-9 focus-visible:border-amber-700 focus-visible:ring-amber-700/30"
         />
       </div>
