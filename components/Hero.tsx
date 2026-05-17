@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const Hero = () => {
@@ -55,7 +56,7 @@ const Hero = () => {
               transition: "opacity 0.7s ease 0.2s, transform 0.7s ease 0.2s",
             }}
           >
-            Start Your Day With{" "}
+            Mulai Harimu Dengan{" "}
             <span className="text-orange-600">Dahayu Coffee</span>
           </h1>
 
@@ -67,8 +68,8 @@ const Hero = () => {
               transition: "opacity 0.7s ease 0.35s, transform 0.7s ease 0.35s",
             }}
           >
-            Freshly brewed coffee made from selected beans, crafted to bring
-            warmth, energy, and joy to your best day.
+            Nikmati kopi segar dari biji pilihan yang diseduh langsung di kedai
+            kami.
           </p>
 
           <div
@@ -100,22 +101,22 @@ const Hero = () => {
               transition: "opacity 0.7s ease 0.55s, transform 0.7s ease 0.55s",
             }}
           >
-            <a
-              href="#menu"
+            <Link
+              href="#location"
               className="rounded-full bg-orange-950 px-7 py-3 font-semibold text-white transition hover:bg-orange-800 active:scale-95"
               style={{ transition: "background 0.2s, transform 0.1s" }}
             >
-              Order Now
-            </a>
+              Datang ke lokasi
+            </Link>
 
             <a
-              href="#about"
+              href="#menu"
               className="rounded-full border border-orange-950 px-7 py-3 font-semibold text-orange-950 transition hover:bg-orange-950 hover:text-white active:scale-95"
               style={{
                 transition: "background 0.2s, color 0.2s, transform 0.1s",
               }}
             >
-              Explore Menu
+              Jelajahi menu
             </a>
           </div>
 
@@ -127,9 +128,9 @@ const Hero = () => {
             }}
           >
             {[
-              { value: "20+", label: "Coffee Menu" },
-              { value: "100%", label: "Fresh Beans" },
-              { value: "4.9", label: "Customer Rating" },
+              { value: "20+", label: "Pilihan Menu" },
+              { value: "100%", label: "Biji Pilihan" },
+              { value: "4.9", label: "Rating Pelanggan" },
             ].map((stat, i) => (
               <div
                 key={stat.label}
@@ -159,16 +160,17 @@ const Hero = () => {
         >
           <div className="max-w-md md:self-end">
             <span className="mb-5 inline-block rounded-full bg-amber-200 px-4 py-2 text-sm font-semibold text-orange-950">
-              Signature Drink
+              Menu Andalan
             </span>
 
             <h2 className="text-3xl font-bold leading-tight sm:text-4xl">
-              Creamy Latte With Rich Espresso Taste
+              Latte Creamy dengan Rasa Espresso yang Kuat
             </h2>
 
             <p className="mt-5 leading-relaxed text-orange-100">
-              Enjoy our favorite coffee menu with smooth milk, bold espresso,
-              and a balanced sweet finish.
+              Nikmati menu favorit kami dengan perpaduan susu lembut, espresso
+              yang bold, dan rasa manis yang seimbang, disajikan langsung di
+              kedai.
             </p>
 
             <div
@@ -177,7 +179,7 @@ const Hero = () => {
                 animation: "cardShimmer 4s ease-in-out infinite",
               }}
             >
-              <p className="text-sm text-orange-100">Today&apos;s Special</p>
+              <p className="text-sm text-orange-100">Spesial Hari Ini</p>
 
               <div className="mt-2 flex items-end justify-between gap-4">
                 <div>
@@ -199,7 +201,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Desktop/tablet center product image */}
       <div
         className="pointer-events-none absolute left-1/2 top-1/2 z-20 hidden md:block"
         style={{

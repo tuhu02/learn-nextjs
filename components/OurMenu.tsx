@@ -108,13 +108,13 @@ const OurMenu = () => {
       : menuItems.filter((item) => item.category === active);
 
   return (
-    <div className="bg-base-100 py-8 sm:py-16 lg:py-24 px-24">
+    <div id="menu" className="bg-base-100 py-8 sm:py-16 lg:py-24 px-24">
       <div className="mb-12 text-center">
         <span className="mb-4 inline-block rounded-full bg-orange-950 px-5 py-2 text-sm font-semibold text-amber-100">
-          Our Menu
+          Menu Kami
         </span>
         <h2 className="text-5xl font-extrabold text-orange-950 md:text-6xl">
-          Crafted With Love
+          Dibuat dengan sepenuh hati
         </h2>
         <p className="mt-3 text-orange-700">
           Pilih favoritmu dari koleksi kopi pilihan kami
@@ -171,9 +171,6 @@ const OurMenu = () => {
                 <span className="text-base font-extrabold text-orange-950">
                   {item.price}
                 </span>
-                <button className="rounded-full bg-orange-950 px-4 py-1.5 text-xs font-bold text-amber-100 transition hover:bg-orange-800 active:scale-95">
-                  + Pesan
-                </button>
               </div>
             </div>
           </div>

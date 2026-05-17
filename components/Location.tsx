@@ -1,4 +1,3 @@
-import React from "react";
 import { MapPin } from "lucide-react";
 
 const Location = () => {
@@ -30,7 +29,7 @@ const Location = () => {
           <iframe
             title="Lokasi Fore Coffee"
             src="https://www.google.com/maps?q=Thamrin%20Plaza%20Jakarta&output=embed"
-            className="h-[420px] w-full border-0 md:h-[500px]"
+            className="h-105 w-full border-0 md:h-125"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />

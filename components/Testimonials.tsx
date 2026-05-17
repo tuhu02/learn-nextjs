@@ -1,5 +1,4 @@
 import { Quote } from "lucide-react";
-import { div, section } from "motion/react-client";
 import React from "react";
 
 interface Itestimonials {
@@ -49,25 +48,29 @@ const testimonials: Itestimonials[] = [
 
 const Testimonials = () => {
   return (
-    <section className="relative overflow-hidden bg-white px-6 py-24">
+    <section className="relative overflow-hidden bg-[#F3E5D0] px-6 py-24">
       <div className="mb-16 text-center">
-        <h2 className="text-4xl font-bold md:text-5xl">Testimoni</h2>
-        <h2 className="mx-auto border border-dashed border-lime-500 mt-7  w-60  px-5 py-2.5 rounded-2xl">
+        <h2 className="text-4xl font-bold text-[#3B2416] md:text-5xl">
+          Testimoni
+        </h2>
+
+        <h2 className="mx-auto mt-7 w-60 rounded-2xl border border-dashed border-[#6F4E37] bg-[#C8A27A]/20 px-5 py-2.5 text-[#6F4E37]">
           Kolaborasi Sukses Kami
         </h2>
       </div>
 
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
         {testimonials.map((testimoni) => (
           <div
-            className="border border-lime-500 p-5 rounded-lg shadow-lime-300 shadow-2xs"
+            className="rounded-lg border border-[#C8A27A] bg-white/60 p-5 text-[#3B2416] shadow-sm transition hover:border-[#6F4E37] hover:shadow-md"
             key={testimoni.id}
           >
             <div className="flex items-start gap-3">
-              <Quote className="mr-1 inline-block h-8 w-8 fill-lime-600 text-lime-600" />
-              {testimoni.quote}
+              <Quote className="mr-1 inline-block h-8 w-8 shrink-0 fill-[#6F4E37] text-[#6F4E37]" />
+              <p className="leading-7 text-[#3B2416]/90">{testimoni.quote}</p>
             </div>
-            <div className="mt-5 text-center">
+
+            <div className="mt-5 text-center text-[#6F4E37]">
               <i>~ {testimoni.name} ~</i>
             </div>
           </div>
