@@ -5,7 +5,7 @@ const Location = () => {
     <section id="location" className="bg-white px-6 py-24">
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto mb-10 max-w-3xl text-center">
-          <h2 className="text-4xl font-bold text-emerald-800 md:text-5xl">
+          <h2 className="text-4xl font-bold text-[#3B2416] md:text-5xl">
             Lokasi Kami
           </h2>
 
@@ -15,8 +15,8 @@ const Location = () => {
         </div>
 
         <div className="mb-8 flex justify-center">
-          <div className="flex max-w-3xl items-start gap-3 rounded-full border border-emerald-100 bg-emerald-50 px-6 py-3 text-center text-slate-700">
-            <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-emerald-700" />
+          <div className="flex max-w-3xl items-start gap-3 rounded-full border border-emerald-100 bg-[#F3E5D0] px-6 py-3 text-center text-slate-700">
+            <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-[#6F4E37]" />
 
             <p>
               Jl. M.H. Thamrin, Kota Jakarta Pusat, Daerah Khusus Ibukota

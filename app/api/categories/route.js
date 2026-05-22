@@ -1,3 +1,8 @@
+import { prisma } from '@/lib/prisma'
+
 export async function GET(request){
-    return Response.json({data: 'hello'})
+
+    const categories = await prisma.category.findMany()
+
+    return Response.json({data: categories})
 }
